@@ -5,12 +5,12 @@
     <div class="text-center">
         <div class="m-5">
             <h4>
-                Sign up
+                Login
             </h4>
 
         </div>
         <div>
-            <form action = "{% url 'accountapp:create' %}" method="post">
+            <form action = "{% url 'accountapp:login' %}" method="post">
                 {% csrf_token %}
                 {{ form }}
                 <div class="m-5">
